@@ -866,6 +866,13 @@ public class ChatActivity extends BaseActivity {
 
                     break;
             }
+
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        ClientManager.chattingUserId = "";
     }
 }
