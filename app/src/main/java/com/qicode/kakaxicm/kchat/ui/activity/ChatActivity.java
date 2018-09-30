@@ -288,6 +288,17 @@ public class ChatActivity extends BaseActivity {
         }
     }
 
+    @OnClick(R.id.chat_voice)
+    void voiceClick() {
+        if (mBtnType != MessageBtnType.MsgBtnVoice) {
+
+            setmBtnType(MessageBtnType.MsgBtnVoice);
+        } else {
+
+            setmBtnType(MessageBtnType.MsgBtnText);
+        }
+    }
+
     //其他方式点击
     @OnClick(R.id.chat_add_other)
     void addOtherClick() {
